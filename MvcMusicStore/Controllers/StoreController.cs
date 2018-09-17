@@ -14,11 +14,6 @@ namespace MvcMusicStore.Controllers
         // GET: Store
         public ActionResult Index()
         {
-            //MVC Music Store
-            //Deneme Commit
-
-             string name = "Furkan Açıkgöz";
-
             var genres = storeDB.Genre.ToList();
             return View(genres);
         }
